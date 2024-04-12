@@ -1,4 +1,38 @@
 Titutlo: Selectores avanzados
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         div ~ p {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h3> Selector general de hermanos</h3>
+<p>El signo ~ (virgulilla o tilde de la ñ) selecciona todos los elementos que son hermanos de un elemento  especificado, sin la necesidad de que sean adyacentes. Por ejemplo: seleccionar todos los elementos p que son hermanos de los elementos div:</p>
+<p> <b>Todos los parrafos que siguen al div tienen el fondo verde, sin importar que se iterponga entre el div y los parráfos siguientes.</b></p>
+<p>Parrafo 0, ANTES del div.</p>
+
+<div>
+    <p> Parrafo 1</p>
+        <p> parrafo 2</p>
+</div>
+<p> parrafo 3</p> 
+  <p> parrafo 4</p> 
+    <div>
+        <p> parrafo 5</p>
+    </div>
+    <a href="#">no ba a ningun lugar</a>
+    <p> parrafo 6</p>
+    <p> parrafo 7</p>
+    <span>un texto fuera del parafo</span>
+    <p> parrafo 8</p>
+</body>
+</html>
 Etiqueta: style Texto: 
         div ~ p {
             background-color: yellowgreen;

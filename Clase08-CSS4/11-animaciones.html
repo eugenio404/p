@@ -1,4 +1,49 @@
 Titulo: Animaciones
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         div {
+            width: 100px;
+            height: 100px;
+            animation-name: cambiarColor;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes cambiarColor {
+            0% {
+                background: red;
+                width: 00px;
+                height: 100px;
+            }
+
+            /* Primer fotograma */
+            50% {
+                background: yellow;
+                width: 200px;
+                height: 50px;
+            }
+
+            /* Segundo fotograma */
+            100% {
+                background: green;
+                width: 400px;
+                height: 100px;
+            }
+
+            /* Último fotograma */
+        }
+    </style>
+</head>
+<body>
+    <div>div con animasion</div>
+</body>
+</html>
 Etiqueta: style Texto: 
         div {
             width: 100px;

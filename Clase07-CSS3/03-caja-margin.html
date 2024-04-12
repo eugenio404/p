@@ -1,62 +1,80 @@
 Titulo: Modelo de caja
 Enlace: 03-caja-margin.css
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modelo de caja</title>
+    <link rel="stylesheet" href="03-caja-margin.css".css">
+    03-caja-margin
+</head>
+<body>
+    <h3>Margin (Margenes)</h3>
+    <p>En el modelo de cajas, los márgenes (margin) son los espacios exteriores de un elemento. El espacio que hay entre el borde de un elemento y el borde de otros elementos adyacentes es lo que se considera margen.a</p>
 
-Etiqueta: h3 Texto: Margin (Margenes)
-Etiqueta: p Texto: En el modelo de cajas, los márgenes (margin) son los espacios exteriores de un elemento. El espacio que hay entre el borde de un elemento y el borde de otros elementos adyacentes es lo que se considera margen.
+    <h4>Mismo margin en top-right-bottom-left (fijo en px)</h4>
+    <div class="bloque"></div>
+    <p class="p1">Este es un párrafo que tiene márgenes.Etiqueta:</p> <br>  <br> margin 20px  <br>  <br>
+    <div class="bloque"></div>
+    
+    <div id="espaciador"></div>
 
-Etiqueta: h4 Texto: Mismo margin en top-right-bottom-left (fijo en px)
-Etiqueta: div class="bloque"
-Etiqueta: p class="p1" Texto: Este es un párrafo que tiene márgenes.Etiqueta: br Etiqueta: br margin: 20px; Etiqueta: br Etiqueta: br
-Etiqueta: div class="bloque"
+    <h4>Margenes determinados determinados con margin-top, margin-left, margin-right y margin-bottom.</h4>
 
-Etiqueta: div id="espaciador"
+    <div class="bloque"></div>
 
-Etiqueta: h4 Texto: Margenes determinados determinados con margin-top, margin-left, margin-right y margin-bottom.
+<p class="p2">Este es un párrafo que tiene márgenes.<br> <br>
+margin-top30px <br>
+margin-right 50px <br>
+margin-bottom10px <br>
+margin-left 5px <br> <br>
+</p>
+<div class="bloque"></div>
+<div id="espaciador"></div>
+<h4>Margenes con tres valores (top, laterales, bottom)</h4>
+<div class="bloque"></div>
 
-Etiqueta: div class="bloque"
+<p class="p3">Este es un párrafo que tiene márgenes. <br> <br>
+30px 50px 10px <br> <br>
+</p>
 
-Etiqueta: p class="p2" Texto: Este es un párrafo que tiene márgenes. Etiqueta: br Etiqueta: br
-margin-top: 30px; Etiqueta: br
-margin-right: 50px; Etiqueta: br
-margin-bottom: 10px; Etiqueta: br
-margin-left: 5px; Etiqueta: br Etiqueta: br
+<div class="bloque"></div>
 
-Etiqueta: div class="bloque"
+<div id="espaciador"></div>
 
-Etiqueta: div id="espaciador"
+<h4>Margen con dos valores (vertical, horizontal). Vertical en "auto"</h4>
+<div class="bloque"></div> 
+<p p4>Este es un párrafo que tiene márgenes <br> <br>
+auto 30px <br> <br>
+</p>
+<div class="bloque"></div>
 
-Etiqueta: h4 Texto: Margenes con tres valores (top, laterales, bottom)
+<div id="espaciador"></div>
 
-Etiqueta: div class="bloque"
+<p>Algo muy interesante ocurre cuando dos elementos adyacentes tienen márgenes:</p>
 
-Etiqueta: p class="p3" Texto: Este es un párrafo que tiene márgenes. Etiqueta: br Etiqueta: br
-margin: 30px 50px 10px; Etiqueta: br Etiqueta: br
+<div class="span1">
+<p>Soy un div</p> <br> <br>
+width 150px <br>
+height 150px <br>
+margin 50px <br>
+</div> 
 
-Etiqueta: div class="bloque"
+<div class="span1">
+    <p>Soy un div</p> <br> <br>
+    width 150px <br>
+    height 150px <br>
+    margin 50px <br>
+</div> 
+<p>Por defecto, si tenemos dos elementos adyacentes con, por ejemplo, margin: 50px cada uno, ese espacio de margen se solapará y tendremos 50px en total, y no 100px (la suma de cada uno) como podríamos pensar en un principio.</p>
+<p>enlace a <a href="https://www.w3schools.com/css/css_margin.asp">mas informasion :) </a>  Más información sobre márgenes</p>
+<br> <br>
+</body>
+</html>
 
-Etiqueta: div id="espaciador"
 
-Etiqueta: h4 Texto: Margen con dos valores (vertical, horizontal). Vertical en "auto"
-Etiqueta: div class="bloque"
-Etiqueta: p class="p4" Texto: Este es un párrafo que tiene márgenes. Etiqueta: br Etiqueta: br
-margin: auto 30px; Etiqueta: br Etiqueta: br
-Etiqueta: div class="bloque"
 
-Etiqueta: div id="espaciador"
-
-Etiqueta: p Texto: Algo muy interesante ocurre cuando dos elementos adyacentes tienen márgenes:
-
-Etiqueta: div class="span1"
-Etiqueta: p Texto: Soy un div Etiqueta: br Etiqueta: br
-width: 150px; Etiqueta: br
-height: 150px; Etiqueta: br
-margin: 50px; Etiqueta: br
-
-Etiqueta: div class="span1"
-Etiqueta: p Texto: Soy un div Etiqueta: br Etiqueta: br
-width: 150px; Etiqueta: br
-height: 150px; Etiqueta: br
-margin: 50px; Etiqueta: br
 
 Etiqueta: p Texto: Por defecto, si tenemos dos elementos adyacentes con, por ejemplo, margin: 50px cada uno, ese espacio de margen se solapará y tendremos 50px en total, y no 100px (la suma de cada uno) como podríamos pensar en un principio.
 Etiqueta: p Texto: enlace a: "https://www.w3schools.com/css/css_margin.asp" Más información sobre márgenes

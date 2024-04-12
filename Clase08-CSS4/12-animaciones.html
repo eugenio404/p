@@ -1,4 +1,65 @@
 Titulo: Animaciones
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* relative: igual que el estático pero
+            depende de las propiedades top, bottom, etc. */
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 8s;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+                border-radius: 0%;
+            }
+
+            25% {
+                background-color: salmon;
+                left: 200px;
+                top: 0px;
+                border-radius: 50%;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+                border-radius: 0%;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+                border-radius: 50%;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+                border-radius: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div> animasion </div>
+</body>
+</html>
+
 Etiqueta: style Texto: 
         div {
             /* relative: igual que el estático pero

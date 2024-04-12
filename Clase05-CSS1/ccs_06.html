@@ -1,5 +1,56 @@
 Titulo: CSS6
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 6</title>
+    <style>
+    span.a {
+        display: inline;
+        width: 100px;
+        height: 1000px;
+        padding: 5px;
 
+    }
+
+    span.b {
+        display: inline-block;
+        width: 200px;
+        height: 60px;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: yellow;
+    }
+
+    span.c {
+        display: block;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: yellow;
+    }
+    </style>
+</head>
+<body>
+    <h1>propiedad display</h1>
+    <div style="background-color: yellow; hidden=yes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet
+        consequat. Aliquam erat volutpat. </div>
+    <pan class="a">pan 1</pan>   
+    <pan class="a">pan 2</pan>
+    <br>
+    <h2>display: inline</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat.  </div>
+    <span class="b">  Span 1 (inline-block) </span>
+    <span class="b" >Span 2 (inline-block)</span>
+    <br>
+    <h2>display: block</h2>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat.  </div>
+    <span class="c">  Span 1 (block) </span>
+    <span class="c">  Span 2 (block) </span>
+</body>
+</html>
 Etiqueta: style
         span.a {
             display: inline;
@@ -33,14 +84,14 @@ Propiedad Display:(en h1)
 Etiqueta: h2 Texto: display: inline
 Etiqueta: div style="background-color: yellow; hidden=yes" Texto: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet
 consequat. Aliquam erat volutpat. 
-Etiqueta: span class="a" Texto: Span 1 
+Etiqueta: span  
 Etiqueta: span class="a" Texto: Span 2 
 gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.
 
 Etiqueta: h2 Texto: display: inline-block
 Etiqueta: div Texto: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. 
 Etiqueta: span class="b" Texto: Span 1 (inline-block) 
-Etiqueta: span class="b" Texto: Span 2 (inline-block) 
+Etiqueta: span class="b" Texto: 
 gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.
 
 Etiqueta: h2 Texto: display: block
